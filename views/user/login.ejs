@@ -1,0 +1,43 @@
+<% layout("/layout/boilerplate.ejs") %>
+
+<div class="card offset-2 col-6 mt-3">
+  <div class="card-header text-center">LogIn</div>
+  <div class="card-body">
+    <form action="/login" method="post" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">UserName</label>
+        <input
+            type="text"
+            name="username"
+            placeholder="type your username here!!"
+            class="form-control"
+            required
+        />
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please enter valid <b>username</b>.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+            type="password"
+            name="password"
+            placeholder="type your password here!!"
+            class="form-control"
+            required
+        />
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please enter valid <b>password</b>.
+        </div>
+      </div>
+      <button class="btn btn-primary mt-3 mb-3 offset-5">Login</button>
+    </form>
+    
+  </div>
+</div>
